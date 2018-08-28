@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <title>iOS - Safari - AutoFill Credit Card</title>
   <title></title>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
   
   
-      <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   
 </head>
@@ -20,108 +20,79 @@
 <body>
 
   <ul>
-  <li><a href="https://touch.kasamba.com/testautofill.html">Change to HTTPS</a></li>
-  
-  <li><a onclick="javascript: clearAllInputs();" href="#">Clear All Inputs</a></li>
-  <li><a href="https://codepen.io/OTomer/post/ios-safari-scan-autofill-credit-card">More info</a></li>
-</ul>
-<h3>Inputs test</h3>
-<ul>
-  <li>
-    (ios,android) type="tel": <input type="tel" />
-  </li>
-  <li>
-    (android) type="number": <input type="number" />
-  </li>
-  <li>
-    (ios) type="text" pattern="[0-9]*" smopname="num": <input type="text" pattern="[0-9]*" smopname="num">
-  </li>
-</ul>
+    <li><a href="https://touch.kasamba.com/testautofill.html">Change to HTTPS</a></li>
+
+    <li><a onclick="javascript: clearAllInputs();" href="#">Clear All Inputs</a></li>
+    <li><a href="https://codepen.io/OTomer/post/ios-safari-scan-autofill-credit-card">More info</a></li>
+  </ul>
+  <h3>Inputs test</h3>
+  <ul>
+    <li>
+      (ios,android) type="tel": <input type="tel" />
+    </li>
+    <li>
+      (android) type="number": <input type="number" />
+    </li>
+    <li>
+      (ios) type="text" pattern="[0-9]*" smopname="num": <input type="text" pattern="[0-9]*" smopname="num">
+    </li>
+  </ul>
 
 
-<h3>Credit number</h3>
-<ol id="credit-numbers-list">
-  <li class="working">
-    id="cardNumber" (Netflix)
-    <input name="cardNumber" smopname="num" id="cardNumber" class="cardNumber" type="text" pattern="[0-9]*">
-  </li>
-  <li class="working">
-    id="cardNumber"
-    <input id="cardNumber" type="text">
-  </li>
-  <li class="working">
-    id="creditCardNumber"
-    <input id="creditCardNumber" type="text">
-  </li>
-  <li class="working">
-    name="addCreditCardNumber" (Amazon)
-    <input name="addCreditCardNumber" size="20" maxlength="20">
-  </li>
-  <li class="working">
-    name="addCreditCardNumber"
-    <input type="text" name="addCreditCardNumber">
-  </li>
-  <li class="working">
-    name="cardNumber"
-    <input type="text" name="cardNumber">
-  </li>
-  <li class="working">
-    name="cardnumber"
-    <input type="text" name="cardnumber">
-  </li>
-  <li class="not-working">
-    class="cardNumber"
-    <input type="text" class="cardNumber">
-  </li>
-  <li class="not-working">
-    type="cardNumber"
-    <input type="text" type="cardNumber">
-  </li>
-</ol>
-<h3>Expiration</h3>
-<ul>
-  <li class="working">
-    id="creditCardMonth"
-    <!--<input id="creditCardMonth" type="text">-->
-    <select id="creditCardMonth">
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-                <option value="04">04</option>
-                <option value="05">05</option>
-                <option value="06">06</option>
-                <option value="07">07</option>
-                <option value="08">08</option>
-                <option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-            </select>
-  </li>
-  <li class="working">
-    id="creditCardYear"
-    <!--<input id="creditCardYear" type="text">-->
-    <select id="creditCardYear">
-                <option value="16">2016</option>
-                <option value="17">2017</option>
-                <option value="18">2018</option>
-                <option value="19">2019</option>
-                <option value="20">2020</option>
-                <option value="21">2021</option>
-                <option value="22">2022</option>
-                <option value="23">2023</option>
-                <option value="24">2024</option>
-                <option value="25">2025</option>
-                <option value="26">2026</option>
-
-            </select>
-  </li>
-</ul>
+  <h3>Credit number</h3>
+  <ol id="credit-numbers-list">
+    <li class="working">
+      id="cardNumber"
+      <input id="cardNumber" type="text">
+    </li>
+    <li class="working">
+          id="cardName"
+          <input id="cardName" type="text">
+    </li>
+  </ol>
+  <h3>Expiration</h3>
+  <ul>
+    <li class="working">
+      id="creditCardMonth"
+      <!--<input id="creditCardMonth" type="text">-->
+      <select id="creditCardMonth">
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+    </li>
+    <li class="working">
+      id="creditCardYear"
+      <!--<input id="creditCardYear" type="text">-->
+      <select id="creditCardYear">
+        <option value="16">2016</option>
+        <option value="17">2017</option>
+        <option value="18">2018</option>
+        <option value="19">2019</option>
+        <option value="20">2020</option>
+        <option value="21">2021</option>
+        <option value="22">2022</option>
+        <option value="23">2023</option>
+        <option value="24">2024</option>
+        <option value="25">2025</option>
+        <option value="26">2026</option>
+      </select>
+    </li>
+  </ul>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 
-  
 
-    <script  src="js/index.js"></script>
+
+  <script  src="js/index.js"></script>
 
 
 
